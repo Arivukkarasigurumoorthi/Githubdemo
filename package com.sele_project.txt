@@ -8,7 +8,7 @@ public class Adactin {
 	
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", 
-	"C:\\Users\\arivu\\eclipse-workspace\\Selenium_Pro\\chromedriver\\chromedriver.exe");
+	        "C:\\Users\\arivu\\eclipse-workspace\\Selenium_Pro\\chromedriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://adactinhotelapp.com/");
