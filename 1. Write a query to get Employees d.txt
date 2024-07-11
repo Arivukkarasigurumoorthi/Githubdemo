@@ -1,0 +1,11 @@
+1. Write a query to get Employees details whose name starts with letter A.
+2. Write a SQL Query to retrieve the count of orders placed on each date.
+Given the “Orders” table
+3. Write a update query to update salary by 10% specific to role as developer
+
+------------------------------------------------------------------------------------------
+
+1) Select * Employees Where Name Like 'A%'
+2) Select orderDate, COUNT(order ID) as totalorders from orders group by orderdate;
+3) Update Employees Set Salary = Salary *1.1 -- increase Salary by 10%
+	Where Role = 'Developer';
