@@ -14,14 +14,14 @@ public class Adactin {
 		driver.get("https://adactinhotelapp.com/");
 		
 		String user="//td[text()='Important Note:']/parent::tr/parent::tbody/parent::table/preceding-sibling::form/"
-				+ "child::table/descendant::tr[2]/child::td[2]/child::input";
+				+ "child::table/descendant::tr[2](/child::td)[last()]/child::input";
 		driver.findElement(By.xpath(user)).sendKeys("meenakannan");
 		
 		
 		String pass = "//td[text()='Important Note:']/parent::tr/parent::tbody/parent::table/preceding-sibling::form"
 				+ "/child::table/descendant::tr[3]/child::td[2]/child::input";
 		driver.findElement(By.xpath(pass)).sendKeys("6UJ6V2");
-		
+
 		driver.findElement(By.xpath("(//input)[last()]")).click();
 		
 	}
